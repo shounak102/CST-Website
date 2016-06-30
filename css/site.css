@@ -66,6 +66,16 @@ h1 {
 
 }
 
+@media (max-width: 500px){
+  .navbar-brand {
+      width: 300px;
+      padding-top: 2px;
+      padding-left: 20px;
+      float: left;
+  }
+
+}
+
 /*Code to collapse breakpoint*/
 @media (max-width: 1100px) {
   .navbar-header {
@@ -126,7 +136,7 @@ h1 {
   margin:0 auto;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-height: 670px;
+  max-height: 650px;
 }
 
 .super-container img
@@ -229,6 +239,15 @@ h1 {
 }
 /*End of Slideshow*/
 
+/*Intro Content*/
+
+h2 {
+  font-family: 'Varela Round', sans-serif;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 /*Contact Info*/
 
 .contact-container {
@@ -245,7 +264,16 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#redirect {
+  padding-top: 10px;
+  font-family: 'Varela Round', sans-serif;
+}
+h4 {
+  text-align: center;
+  font-size: 20px;
+}
 h3 {
+  text-align: left;
   font-family: 'Varela Round', sans-serif;
   padding: 5px;
 }
@@ -256,10 +284,99 @@ h3 {
   font-family: 'Varela Round', sans-serif;
   font-size: 12px;
   color: #555555;
+  text-align: left;
 }
 
 .contact-persons {
+  text-align: left;
   padding: 5px;
   font-family: 'Varela Round', sans-serif;
   font-size: 12px;
+}
+
+#myImg1, #myImg2, #myImg3 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg1:hover, #myImg2:hover, #myImg3:hover {opacity: 0.9;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 85%;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-family: "Varela Round", sans-serif;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation: forwards;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation: forwards;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }

@@ -26,7 +26,7 @@
     <div id="main">
 
       <!--Navigation Bar-->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navigation-bar">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -60,19 +60,19 @@
       <div class="super-container">
         <div class="mySlides fade" style="display: block;">
           <div class="numbertext">1 / 3</div>
-          <img src="img/active house fall'16.jpg" style="width: 100%">
+          <img src="img/active house fall'16.jpg" style="width: 100%" id='myImg1' alt="CST Active House Fall '16">
           <div class="text">CST Active House Fall '16</div>
         </div>
 
         <div class="mySlides fade" style="display: none;">
           <div class="numbertext">2 / 3</div>
-          <img src="img/alzwalk.jpg" style="width: 100%">
+          <img src="img/alzwalk.jpg" style="width: 100%" id='myImg2' alt="Walk for Alzheimer's Awareness">
           <div class="text">Walk for Alzheimer's Awareness</div>
         </div>
 
         <div class="mySlides fade" style="display: none;">
           <div class="numbertext">3 / 3</div>
-          <img src="img/cstxkpl.jpg" style="width: 100%">
+          <img src="img/cstxkpl.jpg" style="width: 100%" id='myImg3' alt="Spring Clean Up with the sisters of Kappa Phi Lambda">
           <div class="text">Spring Clean Up with the sisters of Kappa Phi Lambda</div>
         </div>
 
@@ -87,6 +87,23 @@
         <span class="dot" id="dot3"></span>
       </div>
       <!--/Slideshow-->
+      <div class="container-fluid" id="redirect">
+        <div class="col-md-4">
+          <h4>About us</h4>
+          <p>Pi Kappa Phi Fraternity was founded to further create leadership opportunities — by men who made the choice to lead.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Meet the Brothers</h4>
+          <p>Our chapter is filled with brothers from all facets of life, each bringing their own unique contribution to our fraternity.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Rush CST</h4>
+          <p>Excellence is a choice. Will you make the right choice?</p>
+        </div>
+      </div>
+      <div class="intro">
+        <h2>Welcome to the Gamma Chapter of Chi Sigma Tau National Fraternity, Inc.<h2>
+      </div>
 
       <!-- Contact Info -->
       <div class="contact-container">
@@ -105,6 +122,64 @@
           <p>President: MacArthur Evaristo<br>Phone: (630) 244-5324 | mevaristo69@illinois.edu</p>
         </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">×</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <!--Javascript for modal-->
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img1 = document.getElementById('myImg1');
+    var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img1.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+        var navig = document.getElementById('navigation-bar');
+        navig.style.display = "none";
+    }
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+        var navig = document.getElementById('navigation-bar');
+        navig.style.display = "none";
+    }
+    img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+        var navig = document.getElementById('navigation-bar');
+        navig.style.display = "none";
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    modal.onclick = function(){
+      modal.style.display = "none";
+      var navig = document.getElementById('navigation-bar');
+      navig.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+        var navig = document.getElementById('navigation-bar');
+        navig.style.display = "block";
+    }
+    </script>
 
 
   </body>
