@@ -374,7 +374,28 @@ h3 {
     .modal-content {
         width: 100%;
     }
+    body{
+      padding: 0px 5px 0px 5px;
+      background:white url(../img/hunter-green-grunge-texture.jpg) repeat;
+      color: #000000;
+      font-size: 14px;
+    }
+    h1, h4, h2{
+      font-size: 25px;
+    }
+    .navbar li {
+      font-size: 15px;
+    }
+    .col1,.col2{
+      font-size: 15px;
+    }
+    .motto{
+      font-size: 30px;
+    }
+
 }
+
+
 
 /*about.html*/
 
