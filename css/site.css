@@ -138,7 +138,7 @@ h1 {
     cursor: pointer;
     transition: 0.3s;
 }
-#myImg1:hover, #myImg2:hover, #myImg3:hover {opacity: 0.9;}
+#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover {opacity: 0.9;}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -369,7 +369,7 @@ h3 {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
+/*Smaller Screens Modification*/
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
@@ -393,11 +393,24 @@ h3 {
       font-size: 30px;
     }
 
+    .header {
+      font-size: 20px;
+      padding-left: 40px;
+    }
+
 }
 
 
 
 /*about.html*/
+
+.header {
+  padding-left: 60px;
+  padding-top: 15px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  font-weight:bolder;
+}
 
 .pic1>img, .pic2>img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -414,5 +427,30 @@ h5 {
   font-family: 'Varela Round', sans-serif;
   font-size: 20px;
   font-weight: bold;
+  color: #005E2F;
+}
+
+
+/*rush.html*/
+
+.fall16>img, .img>img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fall16>p {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+}
+.pics{
+  margin-top: 30px;
+  font-family: 'Varela Round', sans-serif;
+}
+.row1, .row2 {
+  margin: 30px;
+}
+#album {
+  font-size: 20px;
+}
+
+#end,.green {
   color: #005E2F;
 }
