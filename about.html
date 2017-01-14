@@ -24,7 +24,7 @@
 
     <div id="main">
       <!--Navigation Bar-->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navigation-bar">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -46,8 +46,8 @@
                 <a href="about.html"><li class = "active">About Us</li></a>
                 <a href="rush.html"><li>Rush</li></a>
                 <a href="brothers.html"><li>Brothers</li></a>
-              <a href=#><li>Gallery</li></a>
-              <a href=#><li>Links</li></a>
+                <a href=#><li>Gallery</li></a>
+                <a href="links.html"><li>Links</li></a>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
@@ -63,14 +63,14 @@
           <p class="descrip" align="justify">Chi Sigma Tau National Fraternity, Inc. is the first Asian American interest fraternity to have been founded in the Midwest. Currently we have 6 chapters established across the Midwest, and the Gamma chapter of Chi Sigma Tau was founded at the University of Illinois of Urbana-Champaign on December 6, 2006. Chi Sigma Tau has been dedicated to bringing the best of high school athletes and scholars together to create an elite organization. Today CST can boast of Marines, MMA fighters, top high school athletes, rappers, dancers, DJ's, and most importantly, successful college graduates. Although CST is an Asian interest organization, it is NOT Asian Exclusive. We welcome men of all backgrounds to join in a TRUE Brotherhood. Chi Sigma Tau takes young students and guides them to graduation and their future-- As prepared, well rounded gentlemen.</p>
         </div>
         <div class = "pic1 col-md-6 col-xs-6">
-          <img src="midyear2016.jpg" style="width: 100%"></img>
+          <img src="midyear2016.jpg" style="width: 100%" id='myImg1' alt="Midyear 2016"></img>
           <p align="center" class="descimg"><br>Midyear 2016</p>
         </div>
       </div>
 
       <div class="container-fluid">
         <div class = "pic2 col-md-6">
-          <img src="walk4alz.jpg" style="width: 100%"></img>
+          <img src="walk4alz.jpg" style="width: 100%" id='myImg2' alt="Walk for Alzheimer's 2016"></img>
           <p align="center" class="descimg"><br>Walk for Alzheimer's 2016</p>
         </div>
         <div id="Philantrophy" class="info2 col-md-6">
@@ -107,14 +107,14 @@
           </ul>
         </div>
         <div class = "pic3 col-md-6">
-          <img src="founders.jpg" style="width: 100%"></img>
+          <img src="founders.jpg" style="width: 100%" id='myImg3' alt="Our Founders"></img>
           <p align="center" class="descimg"><br>Our Founders</p>
         </div>
       </div>
 
       <div class="container-fluid">
         <div class = "pic4 col-md-6">
-          <img src="chartersgamma.jpg" style="width: 100%"></img>
+          <img src="chartersgamma.jpg" style="width: 100%" id='myImg4' alt="Gamma Chapter Charters' Crossing"></img>
           <p align="center" class="descimg"><br>Gamma Chapter Charters' Crossing</p>
         </div>
         <div id="History" class="info4 col-md-6">
@@ -146,14 +146,89 @@
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCCuR9x-DFaXzCyvI6tiwF4fzXDnSVBrw&q=704+S+Lincoln+Ave,Urbana+IL">
         </iframe>
         <div class="contact-details">
-          <p>Address:<br>704 S Lincoln Ave<br>Urbana, IL<br>61801</p>
+          <p class="col-md-6">Address:<br>704 South Lincoln Avenue<br>Urbana, IL<br>61801</p>
         </div>
         <div class="contact-persons">
-          <p>Rush Chair: Brandon Au<br>Phone: (630) 346-0748 | Email: brandmew95@gmail.com</p>
-          <p>Rush Chair: Ryan Huynh<br>Phone: (630) 272-6261 | Email: huynh.ryan@outlook.com</p>
-          <p>President: MacArthur Evaristo<br>Phone: (630) 677-2318 | Email: macevaristo11@yahoo.com</p>
+          <div class="contactrow">
+            <div class="col-md-6"><p>President: MacArthur Evaristo<br>Phone: (630) 677-2318 | Email: macevaristo11@yahoo.com</p></div>
+            <div class="col-md-6"><p>Rush Chair: Brandon Au<br>Phone: (630) 346-0748 | Email: brandmew95@gmail.com</p></div>
+          </div>
+          <div class="contactrow">
+            <div class="col-md-6"><p>Rush Chair: Ryan Huynh<br>Phone: (630) 272-6261 | Email: huynh.ryan@outlook.com</p></div>
+            <div class="col-md-6"><p>Rush Chair: Ryan Huynh<br>Phone: (630) 272-6261 | Email: huynh.ryan@outlook.com</p></div>
+          </div>
         </div>
-    </div>
+        <div class="social-media container-fluid">
+          <a href="https://www.facebook.com/uiuc.chisigs/" target="_blank"><img src="img/facebook.png"></img></a>
+          <a href="#" target="_blank"><img src="img/instagram.png"></img></a>
+        </div>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <!--Javascript for modal-->
+      <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img1 = document.getElementById('myImg1');
+        var img2 = document.getElementById('myImg2');
+        var img3 = document.getElementById('myImg3');
+        var img4 = document.getElementById('myImg4');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img1.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+            var navig = document.getElementById('navigation-bar');
+            navig.style.display = "none";
+        }
+        img2.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+            var navig = document.getElementById('navigation-bar');
+            navig.style.display = "none";
+        }
+        img3.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+            var navig = document.getElementById('navigation-bar');
+            navig.style.display = "none";
+        }
+        img4.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+            var navig = document.getElementById('navigation-bar');
+            navig.style.display = "none";
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        modal.onclick = function(){
+          modal.style.display = "none";
+          var navig = document.getElementById('navigation-bar');
+          navig.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+            var navig = document.getElementById('navigation-bar');
+            navig.style.display = "block";
+        }
+      </script>
     </div>
   </body>
 </html>

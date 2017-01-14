@@ -138,7 +138,7 @@ h1 {
     cursor: pointer;
     transition: 0.3s;
 }
-#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover, #myImg17:hover, #myImg18:hover, #myImg19:hover, #myImg20:hover, #myImg21:hover, #myImg22:hover 
+#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover, #myImg17:hover, #myImg18:hover, #myImg19:hover, #myImg20:hover, #myImg21:hover, #myImg22:hover
 {opacity: 0.9;}
 /* Next & previous buttons */
 .prev, .next {
@@ -294,8 +294,16 @@ h3 {
   padding: 5px;
   font-family: 'Varela Round', sans-serif;
   font-size: 12px;
+  overflow: auto;
 }
 
+.social-media>a>img{
+  padding: 5px;
+  width: 40px;
+}
+.social-media>a>img:hover{
+  opacity: 0.9;
+}
 
 /* The Modal (background) */
 .modal {
@@ -493,4 +501,9 @@ h5 {
 
 .descbroactives, .classblock{
   font-family: 'Varela Round', sans-serif;
+}
+
+/*links.html*/
+.facebook-page{
+  overflow: auto;
 }
