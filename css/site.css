@@ -304,6 +304,11 @@ h3 {
 .social-media>a>img:hover{
   opacity: 0.9;
 }
+#copyright{
+  font-family: 'Varela Round',sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
 
 /* The Modal (background) */
 .modal {
@@ -503,7 +508,35 @@ h5 {
   font-family: 'Varela Round', sans-serif;
 }
 
+.bold{
+  font-weight: bold;
+}
 /*links.html*/
-.facebook-page{
-  overflow: auto;
+#facebook-header{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  color: #005E2F;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+#fbpage{
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#national-website{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 20px;
+  display: block;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }

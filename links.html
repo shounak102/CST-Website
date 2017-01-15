@@ -17,25 +17,7 @@
   </head>
   <meta charset="utf-8">
   <body>
-    <!--Facebook Page plugin script-->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1146429825454239',
-          xfbml      : true,
-          version    : 'v2.8'
-        });
-        FB.AppEvents.logPageView();
-      };
-      (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-      </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -75,11 +57,49 @@
         </div><!-- /.container -->
       </nav>
       <!--/Navigation Bar-->
-      <div class="facebook-page container-fluid">
-        <h2 id="facebook-header">Connect with us on Facebook!</h2>
-        <hr width="50%">
-        <!--Facebook Page plugin-->
-        <div class="fb-page" data-href="https://www.facebook.com/uiuc.chisigs/" data-tabs="timeline" data-width="500" data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/uiuc.chisigs/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uiuc.chisigs/">UIUC Chi Sigs</a></blockquote></div>
+      <div class="row content-row">
+        <div class="facebook-page container-fluid col-md-6">
+          <p id="facebook-header">Connect with us on Facebook!</p>
+          <hr>
+          <!--Facebook Page plugin-->
+          <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuiuc.chisigs&tabs=timeline%2Cevents&width=500&height=1180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500px" height="1180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" id="fbpage"></iframe></center>
+        </div>
+        <div class="col-md-6">
+          <p id="national-website">Our National Page</p>
+          <hr>
+          <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchisigmataunational%2F&tabs&width=500&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" id="fbpage"></iframe></center>
+          <p id="national-website">Our Other Chapters and Colonies</p>
+          <hr>
+          <div class="row chapters">
+            <div class="col-md-6">
+              <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuic.chisigs&tabs&width=250&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" ></iframe></center>
+            </div>
+            <div class="col-md-6">
+              <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fniucst&tabs&width=250&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></center>
+            </div>
+          </div>
+          <div class="row chapters">
+            <div class="col-md-6">
+              <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchisigmatau.deltachapter&tabs&width=250&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></center>
+            </div>
+            <div class="col-md-6">
+              <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwichitachisigs%2F&tabs&width=250&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></center>
+            </div>
+          </div>
+          <div class="row chapters">
+            <div class="col-md-6">
+              <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDenisonChiSigs&tabs&width=250&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></center>
+            </div>
+            <div class="col-md-6">
+              <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUWW-Chi-Sigs-1286000864759194&tabs&width=250&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500px" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></center>
+            </div>
+          </div>
+          <div class="row chapters">
+            <div class="col-md-6">
+              <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcst.uc&tabs&width=250&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=829452593844042" width="500" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></center>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Contact Info -->
       <div class="contact-container container-fluid">
@@ -90,15 +110,16 @@
           frameborder="0" style="border:0"
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCCuR9x-DFaXzCyvI6tiwF4fzXDnSVBrw&q=704+S+Lincoln+Ave,Urbana+IL">
         </iframe>
-        <div class="contact-details">
-          <p class="col-md-6">Address:<br>704 South Lincoln Avenue<br>Urbana, IL<br>61801</p>
+        <div class="contact-details col-md-6">
+          <p>Address:<br>704 South Lincoln Avenue<br>Urbana, IL<br>61801</p>
         </div>
         <div class="contact-persons">
-          <div class="contactrow">
+          <br>
+          <div class="contactrow row">
             <div class="col-md-6"><p>President: MacArthur Evaristo<br>Phone: (630) 677-2318 | Email: macevaristo11@yahoo.com</p></div>
             <div class="col-md-6"><p>Rush Chair: Brandon Au<br>Phone: (630) 346-0748 | Email: brandmew95@gmail.com</p></div>
           </div>
-          <div class="contactrow">
+          <div class="contactrow row">
             <div class="col-md-6"><p>Rush Chair: Ryan Huynh<br>Phone: (630) 272-6261 | Email: huynh.ryan@outlook.com</p></div>
             <div class="col-md-6"><p>Rush Chair: Ryan Huynh<br>Phone: (630) 272-6261 | Email: huynh.ryan@outlook.com</p></div>
           </div>
@@ -106,8 +127,9 @@
         <div class="social-media container-fluid">
           <a href="https://www.facebook.com/uiuc.chisigs/" target="_blank"><img src="img/facebook.png"></img></a>
           <a href="#" target="_blank"><img src="img/instagram.png"></img></a>
+          <p id="copyright">©2017 Chi Sigma Tau Fraternity, Inc. </p>
         </div>
-      </div>
-    </div>
+      </div><!--contact-container-->
+    </div><!--/#main-->
   </body>
 </html>

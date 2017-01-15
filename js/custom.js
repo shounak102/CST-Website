@@ -37,8 +37,8 @@ $(document).ready(function(){
   autoSlide();
   function autoSlide() {
     showSlide(slideIndex+=1);
-    setTimeout(autoSlide, 10000);
-    // Change image every 10 seconds
+    setTimeout(autoSlide, 15000);
+    // Change image every 15 seconds
   }
   //On Click functions
   $(".next").click(function(){
@@ -57,6 +57,23 @@ $(document).ready(function(){
     else
     if (this.id == "dot3")
         showSlide(slideIndex = 3);
+    else
+    if (this.id == "dot4")
+        showSlide(slideIndex = 4);
+    else
+    if (this.id == "dot5")
+      showSlide(slideIndex = 5);
+    else
+    if (this.id == "dot6")
+        showSlide(slideIndex = 6);
+    else
+    if (this.id == "dot7")
+        showSlide(slideIndex = 7);
+    else
+    if (this.id == "dot8")
+        showSlide(slideIndex = 8);
+
+
   });
   //Function to change slides
   function showSlide(n) {
