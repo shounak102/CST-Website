@@ -468,7 +468,11 @@ h5 {
 #end,.green {
   color: #005E2F;
 }
-
+#note{
+  margin-top: 30px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
+}
 /*brothers.html*/
 #brothersHeader {
   font-size: 25px;
