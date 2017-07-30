@@ -24,7 +24,6 @@
    <!-- Include all compiled plugins (below), or include individual files as needed -->
    <script src="js/bootstrap.min.js"></script>
    <!--Custom Javascript-->
-   <script src="js/custom.js"></script>
 
    <div id="main">
 
@@ -58,7 +57,33 @@
        </div><!-- /.container -->
      </nav>
      <!--/Navigation Bar-->
+     <div class="container-fluid" id="main-grid">
+       <div class="col-sm-4" id="imgCol">
+         <img src="gallery/gal1.jpg" style="width: 100%" id="myImg1" alt="Our brothers Eric 'Raven' Zhao and Nathan 'Roach' Ou at Ultra Music Festival 2017"></img>
+         <img src="gallery/gal2.jpg" style="width: 100%" id="myImg2" alt="Gamma Chapter at our summer National Convention 2017 in Denver, CO"></img>
+         <img src="gallery/gal3.jpg" style="width: 100%" id="myImg3" alt="Our brothers dressed up for Halloween 2016"></img>
+         <img src="gallery/gal4.jpg" style="width: 100%" id="myImg4" alt="Curtis Orchard Social with the sisters of alpha Kappa Delta Phi"></img>
+         <img src="gallery/gal5.jpg" style="width: 100%" id="myImg5" alt="Welcoming the Fall 2016 sisters of Kappa Phi Lambda at their probate"></img>
+         <img src="gallery/gal6.jpg" style="width: 100%" id="myImg6" alt="Our alumni and ex-National Board Treasure Newell 'Oxy' Miao at our National Convention 2016"></img>
+       </div>
 
+       <div class="col-sm-4" id="imgCol">
+         <img src="gallery/gal7.jpg" style="width: 100%" id="myImg7" alt="Our brothers posing at the steps of Krannert Center"></img>
+         <img src="gallery/gal8.jpg" style="width: 100%" id="myImg8" alt="At the installs banquet for our Spring 16 and Fall 16 new members"></img>
+         <img src="gallery/gal9.jpg" style="width: 100%" id="myImg9" alt="Santa's Workshop with the sisters of Delta Kappa Delta"></img>
+         <img src="gallery/gal10.jpg" style="width: 100%" id="myImg10" alt="Brandon 'Nitro' Au with his little brother Ryan 'Fate' Huynh"></img>
+         <img src="gallery/gal11.jpg" style="width: 100%" id="myImg11" alt="Our Fall 2016 class at their new member presentation"></img>
+       </div>
+
+       <div class="col-sm-4" id="imgCol">
+         <img src="gallery/gal12.jpg" style="width: 100%" id="myImg12" alt="At our banana bread fundraiser, with all the loaves of banana bread that we baked ourselves"></img>
+         <img src="gallery/gal13.jpg" style="width: 100%" id="myImg13" alt="With the Fall 2016 sisters of Lambda Theta Alpha at their new member presentation"></img>
+         <img src="gallery/gal14.jpg" style="width: 100%" id="myImg14" rotate="90" alt="Our brothers Connor 'Scout' Abendroth and Brandon 'Nitro' Au at our Denver Convention afterset"></img>
+         <img src="gallery/gal15.jpg" style="width: 100%" id="myImg15" alt="Our brothers volunteering to pack meals at the Community and Campus Day of Sevice"></img>
+         <img src="gallery/gal16.jpg" style="width: 100%" id="myImg16" alt="Our brothers walking to support our charity of choice: 'Alzheimer's Association'"></img>
+         <img src="gallery/gal17.jpg" style="width: 100%" id="myImg17" alt="At our booth set up for Quad Day 2016"></img>
+       </div>
+     </div>
      <!-- Contact Info -->
      <div class="contact-container">
        <h3>Contact Us</h3>
@@ -89,6 +114,209 @@
        </div>
      </div>
    </div>
+
+   <!-- The Modal -->
+   <div id="myModal" class="modal">
+     <span class="close">×</span>
+     <img class="modal-content" id="img01">
+     <div id="caption"></div>
+   </div>
+   <!--Javascript for modal-->
+   <script>
+     // Get the modal
+     var modal = document.getElementById('myModal');
+
+     // Get the image and insert it inside the modal - use its "alt" text as a caption
+     var img1 = document.getElementById('myImg1');
+     var img2 = document.getElementById('myImg2');
+     var img3 = document.getElementById('myImg3');
+     var img4 = document.getElementById('myImg4');
+     var img5 = document.getElementById('myImg5');
+     var img6 = document.getElementById('myImg6');
+     var img7 = document.getElementById('myImg7');
+     var img8 = document.getElementById('myImg8');
+     var img9 = document.getElementById('myImg9');
+     var img10 = document.getElementById('myImg10');
+     var img11 = document.getElementById('myImg11');
+     var img12 = document.getElementById('myImg12');
+     var img13 = document.getElementById('myImg13');
+     var img14 = document.getElementById('myImg14');
+     var img15 = document.getElementById('myImg15');
+     var img16 = document.getElementById('myImg16');
+     var img17 = document.getElementById('myImg17');
+
+     var modalImg = document.getElementById("img01");
+     var captionText = document.getElementById("caption");
+     img1.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img2.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img3.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img4.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img5.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img6.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img7.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img8.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img9.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img10.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img11.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img12.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img13.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img14.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img15.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img16.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+     img17.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+         modalImg.alt = this.alt;
+         captionText.innerHTML = this.alt;
+         modalImg.style.maxWidth = "1000px";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "none";
+     }
+
+
+     // Get the <span> element that closes the modal
+     var span = document.getElementsByClassName("close")[0];
+
+     // When the user clicks on <span> (x), close the modal
+     modal.onclick = function(){
+       modal.style.display = "none";
+       var navig = document.getElementById('navigation-bar');
+       navig.style.display = "block";
+     }
+     span.onclick = function() {
+         modal.style.display = "none";
+         var navig = document.getElementById('navigation-bar');
+         navig.style.display = "block";
+     }
+   </script>
 
 
   </body>

@@ -134,12 +134,13 @@ h1 {
   display: block;
   height:inherit;
 }
-#myImg1, #myImg2, #myImg3 {
+#myImg1, #myImg2, #myImg3, #myImg4{
     cursor: pointer;
     transition: 0.3s;
 }
-#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover, #myImg17:hover, #myImg18:hover, #myImg19:hover, #myImg20:hover, #myImg21:hover, #myImg22:hover
-{opacity: 0.9;}
+#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover, #myImg17:hover
+{opacity: 0.9;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -426,7 +427,7 @@ h3 {
   font-weight:bolder;
 }
 
-.pic1>img, .pic2>img {
+.pic1>img, .pic2>img, .pic3>img, .pic4>img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -543,4 +544,18 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+/*gallery.html*/
+#imgCol{
+  padding: 0px;
+}
+@media (min-width: 1024px) {
+  #main-grid{
+    padding: 0px 100px 0px 100px;
+  }
+}
+
+.imgCol>img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
