@@ -134,11 +134,11 @@ h1 {
   display: block;
   height:inherit;
 }
-#myImg1, #myImg2, #myImg3, #myImg4{
+#myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11, #myImg12, #myImg13, #myImg14, #myImg15, #myImg16, #myImg17, #myImg18, #myImg19, #myImg20, #myImg21, #myImg22, #myImg23, #myImg24{
     cursor: pointer;
     transition: 0.3s;
 }
-#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover, #myImg17:hover
+#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover, #myImg17:hover, #myImg18:hover,#myImg19:hover,#myImg20:hover,#myImg21:hover, #myImg22:hover, #myImg23:hover, #myImg24:hover
 {opacity: 0.9;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 /* Next & previous buttons */
